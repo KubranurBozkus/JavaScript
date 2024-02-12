@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SİTE İÇERİK</h1>
+    <hr>
+
+    <script>
+        //veri türleri
+        //1.string
+        //2.number
+        //2.5 NoN
+        //3.Boolean
+        //4.undefined
+        //5.Null
+        //6.objeler
+        //6.5 array veri tipine evrimleşir.
+        //7.symbol
+        //8.BigInt
+
+        // JavaScript veri türü tanımlama kuralları
+        //1.İsimler sayı ile başlayamaz ancak sayı içerebilir.
+        //2.İsimler özel karakter içermemelidir. ($ alt tre hariç.)
+        //3.İsimler türkçe karakter içermemelidir.
+        //4.Değişken isimleri aynı olmamalı.
+        //5.Sabit değişkenler const diye tanılanmalı.
+        
+
+        //Keywords (Anahtar Kelimeler)
+        //Veri tiri tanımlamak için kullanılırlar.
+        //JS de üç tane anahtar kelime vardır: var, let, const
+
+        //atama operatörü
+        // = ile ifade edilir. JavaScriptde bir şey tanımlamak için kullanılır.
+
+
+        //Veri türü tanımlama formatı
+        //<keyword> <değisken adi> <atama operatörü> <veri türü>
+
+        //Bir tane metin tanımla
+        let isim = "Merhaba benim adım ömer"
+        //bir tane sayı tanımla
+        let sayi = 60
+
+        //varsa yoksa
+        let varsa = true
+
+        //boş
+        let bos = null //""
+
+        //üstüne yazma (overwrite,güncelleme)
+        sayi = 40
+        isim = "Merhaba benim adım rumeysa"
+
+
+        //JavaScript de herhangi bir şeyin içerisine girmek için , (dot notation) kullanılır.
+        //outputs (çıkışlar)
+
+        //ifadeleri ayırmak (separatör)
+        //JavaScriptde ifadeleri ayırmak için , kullanılır.
+
+        console.log("isim adlı değişkenin tuttuğu yer:",isim)
+
+        let egitmen = "Ömer"
+        let egitmenYasi = 24
+        let egitmenBrans = "fullstack"
+        
+        console.log("Bu eğitmenin adı:",egitmen,"eğitmenin yaşı:",egitmenYasi,"eğitmenin branşı:",egitmenBrans)
+
+        //alternatif yöntem
+        console.log(`Bu eğitmenin adı ${egitmen},eiğitmenin yaşı ${egitmenYasi}, eiğitmein branşı ${egitmenBrans}`)
+
+        //objeler
+        //key / value şeklinde çalışırlar 
+
+        const kisi = {
+            ad:"Mehmet", 
+            yas:"24",
+            brans:"fullstack"
+
+
+        }
+        
+        let lastName = "Çoban"
+
+        console.log("kisi objem:", kisi.ad)
+
+        //doğum günü oldu yaşı bir arttır.
+        kisi.yas = 26
+        console.log("kişi yaş:", kisi.yas)
+
+        kisi.soyad = lastName
+        console.log("kisinin soyadi simdi:", kisi)
+
+
+
+
+
+
+    </script>
+</body>
+</html>
