@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+    //diziler her şeyi tutabilir.
+    const dizi = ["elma", "armut", "muz"]
+
+    //dizinin içersine gir.
+    const ilkEleman =dizi[0] //elma
+    console.log(ilkEleman)
+
+    //diziye yeni bir eleman ekle.Sonuna
+   dizi.push("kiraz")
+
+    console.log(dizi)
+
+     //dizinin başına bir eleman ekle.
+     dizi.unshift("kavun")
+
+     console.log(dizi)
+
+     //ortaya bir eleman ekle.
+
+     dizi.splice(2, 0, "kivi")
+     console.log(dizi)
+
+     //spesifik olarak veri sil.
+
+     dizi.splice(4, )
+     console.log(dizi)
+
+     //arrayin uzunluğunu al.
+
+     let uzunluk = dizi.length
+     console.log(dizi, uzunluk)
+
+     //arrayi stringe çevir.
+
+     let stringOlarak = dizi.join("*")
+     console.log(stringOlarak)
+
+     let cumle2 = "Merhaba herkese kötükelime lorem ipsum dolor."
+     //cümleyi diziye çevir.
+
+     let arrayOlarak = cumle2.split(" ") // [] 
+     arrayOlarak[2] = "***"
+     console.log(arrayOlarak)
+
+     //arraylerdkini tekrar stringe çevir.
+
+     let strinHali = arrayOlarak.join(" ")
+     console.log(strinHali)
+
+
+
+</script>    
+</body>
+</html>
