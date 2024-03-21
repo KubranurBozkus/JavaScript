@@ -58,6 +58,47 @@
      let strinHali = arrayOlarak.join(" ")
      console.log(strinHali)
 
+     //içeriyor mu?
+
+     const kazananlar = ["ali", "veli", "ömer"]
+
+     console.log("Kazanmış mı?", kazananlar.includes("ömer"))
+
+
+
+     console.log("ARRAYİN STRİNG HALİ:",stringOlarak)
+
+     //Bir insan obje oluştur ve bu objenin gönderiler adında bir keyi olsun ve bu key bir array olsun, arrayde
+     //3 tane gönderi obje olarak (keyleri: baslik: string olarak) tutulsun
+     //tutulsun
+
+     const kisi = {
+        ad:"ömer",
+        cinsiyet:"erkek",
+        yas:24,
+        meslek:"işsiz",
+        gönderiler: [
+            {baslik: "Dünya düz mü?"},
+            {baslik: "csgo vs varolant"},
+            {baslik: "yapay zeka insanlığı ele gecirir mi?"}
+        ]
+     }
+
+console.log(kisi)
+
+//kişinin adı
+console.log("adi:",kisi.ad)
+//kişinin ikinci postu
+console.log("2.postu:", kisi.gönderiler[1].baslik)
+//kişinin mesleğinin ise yazılımcı olması
+kisi.meslek = "yazilimci"
+console.log("mesleği:", kisi.meslek)
+
+//gönderilerden en son postu sil
+kisi.gönderiler.pop()
+console.log("kisinin gönderileri:",kisi.gönderiler)
+
+
 
 
 </script>    
